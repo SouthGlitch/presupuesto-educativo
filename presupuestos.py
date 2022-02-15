@@ -1,6 +1,7 @@
 from typing import Any
 import utils
 from pandas import DataFrame
+from pandas.core.groupby import DataFrameGroupBy
 from pandas.core.series import Series, Dtype
 
 creditos_columnas = [
@@ -11,6 +12,15 @@ creditos_columnas = [
     "credito_pagado"
 ]
 
+# =========================
+# * REQUEST PRESUPUESTO API
+# =========================
+
+
+
+# =============================
+# * UTILIDADES PRESUPUESTARIAS
+# =============================
 
 def calcularSumaCreditos(presupuesto: DataFrame) -> Series:
     utils.sanitizeDecimals(presupuesto, creditos_columnas)
@@ -30,7 +40,29 @@ def sanitizarIdentificador(value) -> identificador:
     index = utils.sanitizeStr(value[1])
     return (key, index)
 
-def sanitizarVariosIdentificadores(value)->identificador:
-    value 
+# def sanitizarVariosIdentificadores(value)->identificador:
+#     value 
 
-# def sumaHitorica(index: tuple[str, str]):
+def construirIdDescDic(group: DataFrameGroupBy) -> dict[int, str]:
+    """
+    Construye un diccionario dónde cada clave es el identificador y su valor un string
+    conteniendo una descripción
+    """
+    dic: dict[int, str] = {}
+    for raw_id_desc in group:
+        id, desc = sanitizarIdDescTouple(raw_id_desc)
+        if (dic.get(id) is not None):
+            raise TypeError("hay más de un valor posible para este diccionario, " +
+                            "es decir que hay más de una descripción posible para este id")
+        dic[id] = desc
+
+    return dic
+
+
+def sanitizarIdDescTouple(value: Any) -> tuple[int, str]:
+    value: tuple[str, Any] = utils.sanitizeKeyValueTouple(value)
+
+
+    index = utils.sanitizeInt64(value[0])
+    desc = utils.sanitizeStr(value[1])
+    return (int(index), desc)

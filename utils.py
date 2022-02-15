@@ -1,8 +1,13 @@
 from numpy import int64
-from pandas import DataFrame
+from pandas import DataFrame, Period
 from pandas.core.groupby import DataFrameGroupBy
 from typing import Any
 
+def createsTimePeriod(*args: list[str]) -> list[Period]:
+    times = []
+    for date in args:
+        times.append(Period(date, freq="Y"))
+    return times
 
 def decimalARtoUSA(value: Any):
     stringDecimal = sanitizeStr(value)
@@ -15,6 +20,10 @@ def sanitizeDecimals(df: DataFrame, columns: list[str]):
 
 
 def construirIdDescDic(group: DataFrameGroupBy) -> dict[int, str]:
+    """
+    Construye un diccionario dónde cada clave es el identificador y su valor un string
+    conteniendo una descripción
+    """
     dic: dict[int, str] = {}
     for raw_id_desc in group:
         id, desc = sanitizarIdDescTouple(raw_id_desc)
