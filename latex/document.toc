@@ -1,4 +1,4 @@
 \contentsline {section}{\numberline {1}Introducción}{1}{}%
-\contentsline {section}{\numberline {2}Último gobierno del Frente Para la Victoria \\ \large 2011-2015}{3}{}%
-\contentsline {section}{\numberline {3}Gobierno de Cambiemos \\ \large 2015-2021}{3}{}%
-\contentsline {section}{\numberline {4}Primeros pasos del Frente de Todos \\ \large 2021}{3}{}%
+\contentsline {section}{\numberline {2}Gobierno de Cambiemos, endeudarse para no imprimir}{3}{}%
+\contentsline {section}{\numberline {3}El Fondo Monetario Internacional}{3}{}%
+\contentsline {section}{\numberline {4}Frente de Todos, pandemia y crisis internacional}{3}{}%

@@ -1,0 +1,76 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+impulsobaires%
+}{%
+impulsobaires%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+globant}
+\APACinsertmetastar {%
+globant}%
+\begin{APACrefauthors}%
+impulsobaires.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{junio}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Martín Migoya, cofundador de Globant contra el intento
+  de suspender las S.A.S: “Argentina necesita más empresas”} {Martín
+  migoya, cofundador de globant contra el intento de suspender las s.a.s:
+  “argentina necesita más empresas”}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{implsobaires}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+iProfesional%
+}{%
+iProfesional%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+tisalta}
+\APACinsertmetastar {%
+tisalta}%
+\begin{APACrefauthors}%
+iProfesional.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{febrero}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Se endurece el cepo al dólar para importadores: la UIA
+  reclama y se reúne con AFIP} {Se endurece el cepo al dólar para
+  importadores: la uia reclama y se reúne con afip}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{iProfesional}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+y Maria Belén~Sanchez%
+}{%
+y Maria Belén~Sanchez%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+cipec}
+\APACinsertmetastar {%
+cipec}%
+\begin{APACrefauthors}%
+y Maria Belén~Sanchez, A\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {El financiamiento educativo en la Argentina: balance y
+  desafíos de cara al cambio de década} {El financiamiento educativo en la
+  argentina: balance y desafíos de cara al cambio de década}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{CIPPEC}{Documento de Trabajo Nº 178-DT-EDU}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
